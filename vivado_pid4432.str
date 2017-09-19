@@ -1,0 +1,63 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 4432
+
+Current time: 	11/13/15 7:50:23 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	D:/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	Administrator
+User directory: C:/Users/Administrator/Desktop/FPGA/PLD/PLD
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+Vivado preferences path: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	155 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 392 MB
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 55) elapsed time: 6.8s
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cp:P (cl:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Administrator\Desktop\FPGA\PLD\PLD\PLD.xpr. Version: Vivado v2015.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 51 MB (+50589kb) [00:00:12]
+// [Engine Memory]: 377 MB (+243452kb) [00:00:12]
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 434 MB (+40729kb) [00:00:17]
+// [GUI Memory]: 57 MB (+3862kb) [00:00:19]
+// [Engine Memory]: 457 MB (+1090kb) [00:00:19]
+// [GUI Memory]: 60 MB (+377kb) [00:00:21]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 471 MB. GUI used memory: 36 MB. Current time: 11/13/15 7:50:31 PM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE

@@ -1,0 +1,363 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Nov 13 19:49:56 2015
+# Process ID: 4432
+# Log file: C:/Users/Administrator/Desktop/FPGA/PLD/PLD/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/FPGA/PLD/PLD\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 774.160 ; gain = 180.969
+import_files -norecurse C:/Users/Administrator/Desktop/FPGA/PLD/FIFO/FIFO.srcs/sources_1/new/fifo_t1.v
+update_compile_order -fileset sources_1
+wrong # args: should be "Actual_Write_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE PARAM_VALUE.OUTPUT_DATA_WIDTH"
+wrong # args: should be "Actual_Write_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE PARAM_VALUE.OUTPUT_DATA_WIDTH"
+wrong # args: should be "Actual_Read_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DATA_WIDTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE"
+wrong # args: should be "Actual_Read_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DATA_WIDTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE"
+wrong # args: should be "Actual_Write_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE PARAM_VALUE.OUTPUT_DATA_WIDTH"
+wrong # args: should be "Actual_Write_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE PARAM_VALUE.OUTPUT_DATA_WIDTH"
+wrong # args: should be "Actual_Read_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DATA_WIDTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE"
+wrong # args: should be "Actual_Read_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DATA_WIDTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE"
+wrong # args: should be "Actual_Write_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE PARAM_VALUE.OUTPUT_DATA_WIDTH"
+wrong # args: should be "Actual_Write_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE PARAM_VALUE.OUTPUT_DATA_WIDTH"
+wrong # args: should be "Actual_Read_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DATA_WIDTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE"
+wrong # args: should be "Actual_Read_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DATA_WIDTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE"
+wrong # args: should be "Actual_Write_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE PARAM_VALUE.OUTPUT_DATA_WIDTH"
+wrong # args: should be "Actual_Write_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE PARAM_VALUE.OUTPUT_DATA_WIDTH"
+wrong # args: should be "Actual_Read_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DATA_WIDTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE"
+wrong # args: should be "Actual_Read_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DATA_WIDTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE"
+wrong # args: should be "Actual_Write_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE PARAM_VALUE.OUTPUT_DATA_WIDTH"
+wrong # args: should be "Actual_Write_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE PARAM_VALUE.OUTPUT_DATA_WIDTH"
+wrong # args: should be "Actual_Read_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DATA_WIDTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE"
+wrong # args: should be "Actual_Read_Depth_updated PARAM_VALUE.ENABLE_ECC PARAM_VALUE.FIFO_IMPLEMENTATION PARAM_VALUE.INPUT_DEPTH PARAM_VALUE.OUTPUT_DATA_WIDTH PARAM_VALUE.OUTPUT_DEPTH PARAM_VALUE.PERFORMANCE_OPTIONS PARAM_VALUE.ECC_PIPELINE_REG PARAM_VALUE.USE_EMBEDDED_REGISTERS PARAM_VALUE.USE_DOUT_REGISTER PARAM_VALUE.READ_CLOCK_FREQUENCY PARAM_VALUE.WRITE_CLOCK_FREQUENCY IPINST PARAM_VALUE.INPUT_DATA_WIDTH PROJECT_PARAM.ARCHITECTURE"
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 12.0 -module_name fifo
+set_property -dict [list CONFIG.Input_Data_Width {8} CONFIG.Input_Depth {32} CONFIG.Reset_Pin {false} CONFIG.Output_Data_Width {8} CONFIG.Output_Depth {32} CONFIG.Full_Flags_Reset_Value {0} CONFIG.Use_Dout_Reset {false} CONFIG.Data_Count_Width {5} CONFIG.Write_Data_Count_Width {5} CONFIG.Read_Data_Count_Width {5} CONFIG.Full_Threshold_Assert_Value {30} CONFIG.Full_Threshold_Negate_Value {29}] [get_ips fifo]
+generate_target {instantiation_template} [get_files c:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.srcs/sources_1/ip/fifo/fifo.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.srcs/sources_1/ip/fifo/fifo.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'fifo' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fifo'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.srcs/sources_1/ip/fifo/fifo.xci]
+launch_run -jobs 2 fifo_synth_1
+[Fri Nov 13 20:17:06 2015] Launched fifo_synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/fifo_synth_1/runme.log
+close [ open C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.srcs/sources_1/new/row.v w ]
+add_files C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.srcs/sources_1/new/row.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Nov 13 21:20:09 2015] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/synth_1/runme.log
+[Fri Nov 13 21:20:09 2015] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Nov 13 21:24:45 2015] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/synth_1/runme.log
+[Fri Nov 13 21:24:45 2015] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Nov 13 22:16:04 2015] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/synth_1/runme.log
+[Fri Nov 13 22:16:04 2015] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183636342A
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.hw/webtalk/labtool_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 95.379 ; gain = 0.000
+
+    while executing
+"webtalk_transmit -clientid 4167773955 -regid "233494984_32389024_324566878_235" -xml C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.hw/webtalk/usage_..."
+    (file "C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.hw/webtalk/labtool_webtalk.tcl" line 28)
+INFO: [Common 17-206] Exiting Webtalk at Fri Nov 13 22:36:07 2015...
+close_hw: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 900.793 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Nov 13 22:38:23 2015] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/synth_1/runme.log
+[Fri Nov 13 22:38:23 2015] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183636342A
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-3175] Target jsn-Basys3-210183636342A is no longer available.
+Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up.
+Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target.
+close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210183636342A
+ERROR: [Common 17-190] Invalid Tcl eval of 'close_hw' during processing of event '52'.
+close_hw
+close_hw: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 912.641 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Nov 13 22:54:58 2015] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/synth_1/runme.log
+[Fri Nov 13 22:54:59 2015] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 913.660 ; gain = 0.000
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183636342A
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-3175] Target jsn-Basys3-210183636342A is no longer available.
+Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up.
+Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target.
+close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210183636342A
+open_hw_target {localhost/xilinx_tcf/Digilent/210183636342A}
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183636342A
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+close_hw: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 913.660 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Nov 13 23:09:21 2015] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/synth_1/runme.log
+[Fri Nov 13 23:09:21 2015] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183636342A
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-3175] Target jsn-Basys3-210183636342A is no longer available.
+Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up.
+Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target.
+close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210183636342A
+close_hw
+close_hw: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 913.660 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Nov 13 23:24:30 2015] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/synth_1/runme.log
+[Fri Nov 13 23:24:30 2015] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 913.660 ; gain = 0.000
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183636342A
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/PLD/PLD.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].

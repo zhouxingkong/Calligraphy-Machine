@@ -1,0 +1,438 @@
+always @(posedge clk_500)
+begin
+    //go_buf1<=goon;//为了检测上升沿
+    //go_buf2<=go_buf1;
+    if(start==1&&endl==0)
+    begin
+        case(state)
+        5'd0:begin
+            vx<=20000;
+            vy<=20000;
+            vz<=50000;
+            disx<=0;
+            disy<=0;
+            disz<=0;
+            dirx<=0;
+            diry<=0;
+            dirz<=0;
+            stab_x<=0;
+            stab_y<=0;
+            stab_z<=0;
+            divr_xy<=1000;
+            divr_z<=500;
+            state<=1;
+            running<=0;
+            test<=0;
+            go<=0;
+        end
+        5'd1:begin  //传入始末点坐标
+            ox<=dx;
+            oy<=dy;
+            oz<=dz;
+            running<=0;
+            test<=0;
+            go<=0;
+//            if(ox==dx&&oy==dy&&oz==dz)state<=2;
+//            else state<=1;
+            state<=2;
+        end
+        5'd2:begin
+            dx<=penx;
+            dy<=peny;
+            dz<=penz;
+            running<=0;
+            test<=0;
+            go<=0;
+            state<=3;
+        end
+        5'd3:begin
+            if(dx==penx&&dy==peny&&dz==penz) state<=4;
+            else state<=2;
+            running<=0;
+            test<=0;
+            go<=0;
+        end
+        5'd4:begin  //传入始末点坐标
+            running<=0;
+            test<=0;
+            go<=0;
+            dirx<=dirx_temp;
+            diry<=diry_temp;
+            dirz<=dirz_temp;
+            state<=5;
+        end
+        5'd5:begin
+            if(equ_r==3'b111) state<=6;
+            else state<=4;
+            running<=0;
+            test<=0;
+            go<=0;
+        end
+        5'd6:begin
+            stab_x<=stab_xt;
+            state<=7;
+            running<=0;
+            test<=0;
+            go<=0;
+        end
+        5'd7:begin
+            stab_y<=stab_yt;
+            state<=8;
+            running<=0;
+            test<=0;
+            go<=0;
+        end
+        5'd8:begin
+            stab_z<=stab_zt;
+            state<=9;
+            running<=0;
+            test<=0;
+            go<=0;
+        end
+        5'd9:begin//传入移动距离
+            disx<=disx_temp;
+            running<=0;
+            test<=0;
+            go<=0;
+            state<=10;
+        end
+        5'd10:begin
+            disy<=disy_temp;
+            running<=0;
+            test<=0;
+            go<=0;
+            state<=11;
+        end
+        5'd11:begin
+            disz<=disz_temp;
+            running<=0;
+            test<=0;
+            go<=0;
+            state<=12;
+        end
+        5'd12:begin
+            if(equ_s==3'b111) state<=13;
+            else state<=9;
+            running<=0;
+            test<=0;
+            go<=0;
+        end
+        5'd13:begin
+            big_x<=big_xt;
+            state<=14;
+            running<=0;
+            test<=0;
+            go<=0;
+        end
+        5'd14:begin
+            big_y<=big_yt;
+            state<=15;
+            running<=0;
+            test<=0;
+            go<=0;
+        end
+        5'd15:begin
+            equ<=equt;
+            state<=16;
+            running<=0;
+            test<=0;
+            go<=0;
+        end
+        5'd16:begin
+            divr_xy<=divr_xyt;
+            divr_z<=divr_zt;
+            running<=0;
+            test<=0;
+            go<=0;
+            state<=17;
+        end
+        5'd17:begin //传入速度aaa
+            vx<=vx_temp;
+            vy<=vy_temp;
+            vz<=vz_temp;
+            running<=0;
+            test<=0;
+            go<=0;
+            state<=18;
+        end
+        5'd18:begin
+            if(equ_v==3'b111) state<=19;
+            else state<=17;
+            running<=0;
+            test<=0;
+            go<=0;
+        end
+        5'd19:begin//传入移动距离
+            running<=1;
+            state<=20;
+            test<=0;
+            go<=0;
+        end
+        5'd20:begin
+            if(zero==3'b111)
+            begin
+                state<=21;
+                running<=0;
+            end
+            else state<=19;
+            test<=0;
+            go<=0;
+        end
+        5'd21:begin//开始移动
+            go<=1;
+            state<=22;
+            running<=0;
+            test<=0;
+        end
+        5'd22:begin//终止移动
+            test<=1;
+            running<=0;
+            if(goon==1)
+            begin
+                state<=23;
+                go<=0;
+            end
+            else state<=22;
+        end
+        5'd23:begin//更改数组索引
+            test<=0;
+            running<=0;
+            go<=0;
+            if(pen<4)
+            begin
+                pen<=pen+1;
+                state<=1;
+            end
+            else endl<=1;
+        end
+        endcase
+    end
+end
+
+
+
+
+
+
+
+
+
+always @(posedge clk_500)
+begin
+    //go_buf1<=goon;//为了检测上升沿
+    //go_buf2<=go_buf1;
+    if(start==1&&endl==0)
+    begin
+        case(state)
+        5'd0:begin
+            vx<=20000;
+            vy<=20000;
+            vz<=50000;
+            disx<=0;
+            disy<=0;
+            disz<=0;
+            dirx<=0;
+            diry<=0;
+            dirz<=0;
+            stab_x<=0;
+            stab_y<=0;
+            stab_z<=0;
+            divr_xy<=1000;
+            divr_z<=500;
+            state<=1;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+        end
+        5'd1:begin  //传入始末点坐标
+            ox<=dx;
+            oy<=dy;
+            oz<=dz;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+            if(ox==dx&&oy==dy&&oz==dz)state<=2;
+            else state<=1;
+           // state<=2;
+        end
+        5'd2:begin
+            dx<=penx;
+            dy<=peny;
+            dz<=penz;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+            state<=3;
+            if(dx==penx&&dy==peny&&dz==penz) state<=4;
+            else state<=2;
+        end
+        5'd3:begin
+            
+//            running<=0;
+//            test<=0;
+//            go<=0;
+        end
+        5'd4:begin  //传入始末点坐标
+//            running<=0;
+//            test<=0;
+//            go<=0;
+            dirx<=dirx_temp;
+            diry<=diry_temp;
+            dirz<=dirz_temp;
+            state<=5;
+        end
+        5'd5:begin
+            if(equ_r==3'b111) state<=6;
+            else state<=4;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+        end
+        5'd6:begin
+            stab_x<=stab_xt;
+            if(stab_x==stab_xt) state<=7;
+            else state<=6;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+        end
+        5'd7:begin
+            stab_y<=stab_yt;
+            if(stab_y==stab_yt) state<=8;
+            else state<=7;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+        end
+        5'd8:begin
+            stab_z<=stab_zt;
+            if(stab_z==stab_zt) state<=9;
+            else state<=8;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+        end
+        5'd9:begin//传入移动距离
+            disx<=disx_temp;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+            state<=10;
+        end
+        5'd10:begin
+            disy<=disy_temp;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+            state<=11;
+        end
+        5'd11:begin
+            disz<=disz_temp;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+            state<=12;
+        end
+        5'd12:begin
+            if(equ_s==3'b111) state<=13;
+            else state<=9;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+        end
+        5'd13:begin
+            big_x<=big_xt;
+            if(big_x==big_xt) state<=14;
+            else state<=13;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+        end
+        5'd14:begin
+            big_y<=big_yt;
+            if(big_y==big_yt) state<=15;
+            else state<=14;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+        end
+        5'd15:begin
+            equ<=equt;
+            if(equ==equt) state<=16;
+            else state<=15;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+        end
+        5'd16:begin
+            divr_xy<=divr_xyt;
+            divr_z<=divr_zt;
+            if(divr_xy==divr_xyt&&divr_z==divr_zt) state<=17;
+            else state<=16;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+        end
+        5'd17:begin //传入速度aaa
+            vx<=vx_temp;
+            vy<=vy_temp;
+            vz<=vz_temp;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+            state<=18;
+        end
+        5'd18:begin
+            if(equ_v==3'b111) state<=19;
+            else state<=17;
+//            running<=0;
+//            test<=0;
+//            go<=0;
+        end
+        5'd19:begin//传入移动距离
+//            running<=1;
+//            test<=0;
+//            go<=0;
+            state<=20;
+        end
+        5'd20:begin
+            if(zero==3'b111)
+            begin
+                state<=21;
+                //running<=0;
+            end
+            else state<=19;
+//            test<=0;
+//            go<=0;
+        end
+        5'd21:begin//开始移动
+//            go<=1;
+//            running<=0;
+//            test<=1;
+            state<=22;
+        end
+        5'd22:begin//终止移动
+//            test<=1;
+//            running<=0;
+            if(goon==1)
+            begin
+                state<=23;
+//                go<=0;
+//                test<=0;
+            end
+            else state<=22;
+        end
+        5'd23:begin//更改数组索引
+//            test<=0;
+//            running<=0;
+//            go<=0;
+            if(pen<4)
+            begin
+                pen<=pen+1;
+                state<=0;
+            end
+            else endl<=1;
+        end
+        endcase
+    end
+end

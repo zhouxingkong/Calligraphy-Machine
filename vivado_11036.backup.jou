@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sun Nov 01 20:43:53 2015
+# Process ID: 4296
+# Log file: C:/Users/Administrator/Desktop/FPGA/PLD/test3/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/FPGA/PLD/test3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.xpr
+update_compile_order -fileset sources_1
+remove_files {C:/Users/Administrator/Desktop/FPGA/PLD/project_2/project_2.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci C:/Users/Administrator/Desktop/FPGA/PLD/project_2/project_2.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.xci}
+remove_files C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci
+remove_files C:/Users/Administrator/Desktop/FPGA/PLD/project_2/project_2.srcs/sources_1/ip/dist_mem_gen_3/dist_mem_gen_3.xci
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name length
+set_property -dict [list CONFIG.depth {128} CONFIG.data_width {7} CONFIG.memory_type {rom} CONFIG.coefficient_file {C:/Users/Administrator/Desktop/FPGA/PLD/test3/memL.coe}] [get_ips length]
+generate_target {instantiation_template} [get_files c:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/length/length.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/length/length.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/length/length.xci]
+launch_run -jobs 2 length_synth_1
+set_property -dict [list CONFIG.data_width {10}] [get_ips memx]
+generate_target all [get_files  C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/memx/memx.xci]
+reset_run memx_synth_1
+launch_run -jobs 2 memx_synth_1
+set_property -dict [list CONFIG.data_width {10}] [get_ips memy]
+generate_target all [get_files  C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/memy/memy.xci]
+reset_run memy_synth_1
+launch_run -jobs 2 memy_synth_1
+update_compile_order -fileset sources_1
+remove_files {C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/memX.coe C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/memY.coe}
+file delete -force C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/memX.coe C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/memY.coe
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw_target
+close_hw
+set_property -dict [list CONFIG.depth {16384} CONFIG.coefficient_file {C:/Users/Administrator/Desktop/FPGA/PLD/test3/memX.coe}] [get_ips memx]
+generate_target all [get_files  C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/memx/memx.xci]
+reset_run memx_synth_1
+launch_run -jobs 2 memx_synth_1
+set_property -dict [list CONFIG.depth {16384}] [get_ips memy]
+generate_target all [get_files  C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/memy/memy.xci]
+reset_run memy_synth_1
+launch_run -jobs 2 memy_synth_1
+set_property -dict [list CONFIG.depth {16384}] [get_ips memz]
+generate_target all [get_files  C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/memz/memz.xci]
+reset_run memz_synth_1
+launch_run -jobs 2 memz_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev  [lindex [get_cfgmem_parts {s25fl032p-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/impl_1/top.bit" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+endgroup
+close_hw_target

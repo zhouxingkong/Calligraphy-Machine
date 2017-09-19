@@ -1,0 +1,240 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sun Nov 01 20:43:53 2015
+# Process ID: 4296
+# Log file: C:/Users/Administrator/Desktop/FPGA/PLD/test3/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/FPGA/PLD/test3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/memX.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/memY.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'dist_mem_gen_0' is locked:
+* IP definition 'Distributed Memory Generator (8.0)' for IP 'dist_mem_gen_0' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'dist_mem_gen_1' is locked:
+* IP definition 'Distributed Memory Generator (8.0)' for IP 'dist_mem_gen_1' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'dist_mem_gen_2' is locked:
+* IP definition 'Distributed Memory Generator (8.0)' for IP 'dist_mem_gen_2' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'dist_mem_gen_3' is locked:
+* IP definition 'Distributed Memory Generator (8.0)' for IP 'dist_mem_gen_3' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:37 ; elapsed = 00:00:18 . Memory (MB): peak = 695.156 ; gain = 101.988
+update_compile_order -fileset sources_1
+remove_files {C:/Users/Administrator/Desktop/FPGA/PLD/project_2/project_2.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci C:/Users/Administrator/Desktop/FPGA/PLD/project_2/project_2.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.xci}
+remove_files C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci
+remove_files C:/Users/Administrator/Desktop/FPGA/PLD/project_2/project_2.srcs/sources_1/ip/dist_mem_gen_3/dist_mem_gen_3.xci
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name length
+set_property -dict [list CONFIG.depth {128} CONFIG.data_width {7} CONFIG.memory_type {rom} CONFIG.coefficient_file {C:/Users/Administrator/Desktop/FPGA/PLD/test3/memL.coe}] [get_ips length]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Administrator/Desktop/FPGA/PLD/test3/memL.coe' provided. It will be converted relative to IP Instance files '..\..\..\..\memL.coe'
+generate_target {instantiation_template} [get_files c:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/length/length.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'length'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/length/length.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'length'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'length' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'length'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'length'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/length/length.xci]
+launch_run -jobs 2 length_synth_1
+[Sun Nov 01 20:48:25 2015] Launched length_synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/length_synth_1/runme.log
+set_property -dict [list CONFIG.data_width {10}] [get_ips memx]
+generate_target all [get_files  C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/memx/memx.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'memx'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'memx'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'memx' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'memx'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'memx'...
+reset_run memx_synth_1
+launch_run -jobs 2 memx_synth_1
+[Sun Nov 01 20:49:35 2015] Launched memx_synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/memx_synth_1/runme.log
+set_property -dict [list CONFIG.data_width {10}] [get_ips memy]
+generate_target all [get_files  C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/memy/memy.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'memy'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'memy'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'memy' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'memy'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'memy'...
+reset_run memy_synth_1
+launch_run -jobs 2 memy_synth_1
+[Sun Nov 01 20:50:02 2015] Launched memy_synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/memy_synth_1/runme.log
+update_compile_order -fileset sources_1
+remove_files {C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/memX.coe C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/memY.coe}
+file delete -force C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/memX.coe C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/memY.coe
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Sun Nov 01 21:21:38 2015] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/synth_1/runme.log
+[Sun Nov 01 21:21:38 2015] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Sun Nov 01 21:34:31 2015] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/synth_1/runme.log
+[Sun Nov 01 21:34:31 2015] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun Nov 01 21:52:13 2015] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 920.996 ; gain = 0.000
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183636342A
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-3175] Target jsn-Basys3-210183636342A is no longer available.
+Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up.
+Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target.
+close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210183636342A
+close_hw
+close_hw: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 961.727 ; gain = 0.000
+set_property -dict [list CONFIG.depth {16384} CONFIG.coefficient_file {C:/Users/Administrator/Desktop/FPGA/PLD/test3/memX.coe}] [get_ips memx]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Administrator/Desktop/FPGA/PLD/test3/memX.coe' provided. It will be converted relative to IP Instance files '..\..\..\..\memX.coe'
+generate_target all [get_files  C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/memx/memx.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'memx'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'memx'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'memx' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'memx'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'memx'...
+reset_run memx_synth_1
+launch_run -jobs 2 memx_synth_1
+[Sun Nov 01 22:10:55 2015] Launched memx_synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/memx_synth_1/runme.log
+set_property -dict [list CONFIG.depth {16384}] [get_ips memy]
+generate_target all [get_files  C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/memy/memy.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'memy'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'memy'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'memy' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'memy'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'memy'...
+reset_run memy_synth_1
+launch_run -jobs 2 memy_synth_1
+[Sun Nov 01 22:11:45 2015] Launched memy_synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/memy_synth_1/runme.log
+set_property -dict [list CONFIG.depth {16384}] [get_ips memz]
+generate_target all [get_files  C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.srcs/sources_1/ip/memz/memz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'memz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'memz'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'memz' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'memz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'memz'...
+reset_run memz_synth_1
+launch_run -jobs 2 memz_synth_1
+[Sun Nov 01 22:12:10 2015] Launched memz_synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/memz_synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Sun Nov 01 22:51:18 2015] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/synth_1/runme.log
+[Sun Nov 01 22:51:18 2015] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun Nov 01 23:07:59 2015] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183636342A
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev  [lindex [get_cfgmem_parts {s25fl032p-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "C:/Users/Administrator/Desktop/FPGA/PLD/test3/test1.runs/impl_1/top.bit" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+Mfg ID : 1   Memory Type : 2   Memory Capacity : 15   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:00:56 . Memory (MB): peak = 985.250 ; gain = 0.000
+endgroup
+ERROR: [Labtools 27-3175] Target jsn-Basys3-210183636342A is no longer available.
+Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up.
+Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target.
+close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210183636342A
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 01 23:37:20 2015...
